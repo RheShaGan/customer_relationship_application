@@ -34,7 +34,7 @@ class CRM
       when 4 then display_contact
       when 5 then display_attribute
       when 6 then delete_contact
-      when 7 then Exit
+      when 7 then exit_program
     end
     
   end
@@ -136,6 +136,11 @@ class CRM
         break
       end
     end
+    
+  end
+
+  def exit_program
+    puts "\e[H\e[2J"
     
   end
 end
